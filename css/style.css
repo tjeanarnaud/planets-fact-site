@@ -10,14 +10,22 @@ font-family: 'Spartan', sans-serif;
   --black-pearl-color: hsl(240, 67%, 8%); /* #070724, rgb(7, 7, 36) */
   --bright-gray-color: hsl(240, 17%, 26%); /* #38384f, rgb(56,56,79) */
   --waterloo-color: hsl(240, 6%, 54%); /* #838391, rgb(131,131,145) */
-  --pelorous-color: hsl(194, 48%, 49%); /* #419ebb, rgb(65,158,187) */
-  --tulip-tree-color: hsl(33, 82%, 61%); /* #eda249, rgb(237,162,73) */
-  --purple-heart-color: hsl(263, 67%, 51%); /* #6f2ed6, rgb(111,46,214) */
-  --valencia-one-color: hsl(10, 63%, 51%); /* #d14c32, rgb(209,76,50) */
-  --valencia-two-color: hsl(2, 68%, 53%); /* #d83a34, rgb(216,58,52) */
-  --piper-color: hsl(17, 73%, 46%); /* #cd5120, rgb(205,81,32) */
-  --java-color: hsl(169, 73%, 44%); /* #1ec2a4, rgb(30,194,164) */
-  --royal-blue-color: hsl(222, 87%, 56%); /* #2d68f0, rgb(45,104,240) */
+  --mercury-color: hsl(194, 48%, 49%); /* pelorous: #419ebb, rgb(65,158,187) */
+  --venus-color: hsl(33, 82%, 61%); /* tulip tree: #eda249, rgb(237,162,73) */
+  --earth-color: hsl(
+    263,
+    67%,
+    51%
+  ); /* purple heart: #6f2ed6, rgb(111,46,214) */
+  --mars-color: hsl(10, 63%, 51%); /* valencia one: #d14c32, rgb(209,76,50) */
+  --jupiter-color: hsl(2, 68%, 53%); /* valencia two: #d83a34, rgb(216,58,52) */
+  --saturn-color: hsl(17, 73%, 46%); /* piper: #cd5120, rgb(205,81,32) */
+  --uranus-color: hsl(169, 73%, 44%); /* java: #1ec2a4, rgb(30,194,164) */
+  --neptune-color: hsl(
+    222,
+    87%,
+    56%
+  ); /* royal blue: #2d68f0, rgb(45,104,240) */
   --border-color: #97979730;
   --antonio-font: 'Antonio', sans-serif;
   --spartan-font: 'Spartan', sans-serif;
