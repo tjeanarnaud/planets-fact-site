@@ -13,72 +13,81 @@
   <div id="wrapper">
 
     <div id="header">
-      <div id="logo-brand">The Planets</div>
+      <div id="logo_brand">The Planets</div>
       <nav>
-        <a class="active" href="#">Mercury</a>
-        <a href="#">Venus</a>
-        <a href="#">Earth</a>
-        <a href="#">Mars</a>
-        <a href="#">Jupiter</a>
-        <a href="#">Saturn</a>
-        <a href="#">Uranus</a>
-        <a href="#">Neptune</a>
+        <a href="#" data-id="0" class="nav_item active">Mercury</a>
+        <a href="#" data-id="1" class="nav_item">Venus</a>
+        <a href="#" data-id="2" class="nav_item">Earth</a>
+        <a href="#" data-id="3" class="nav_item">Mars</a>
+        <a href="#" data-id="4" class="nav_item">Jupiter</a>
+        <a href="#" data-id="5" class="nav_item">Saturn</a>
+        <a href="#" data-id="6" class="nav_item">Uranus</a>
+        <a href="#" data-id="7" class="nav_item">Neptune</a>
       </nav>
     </div>
 
     <div id="main">
-      <div id="planet-images">
-        <img src="./assets/planet-mercury.svg" alt="Mercury">
+      <div id="pictures">
+        <img id="image_overview" src="./assets/planet-mercury.svg" alt="">
+        <img id="image_internal" src="./assets/planet-mercury-internal.svg" alt="">
+        <img id="image_geology" src="./assets/geology-mercury.png" alt="">
       </div>
-      <div id="planet-content">
-        <div id="planet-content-summary">
-          <h1>Mercury</h1>
+      <div id="planet">
+        <div id="planet_content">
+          <h1 id="planet_name">Mercury</h1>
 
-          <p>Mercury is the smallest planet in the Solar System and the closest 
+          <p id="planet_description">Mercury is the smallest planet in the Solar System and the closest 
             to the Sun. Its orbit around the Sun takes 87.97 Earth days, the 
             shortest of all the Sun's planets. Mercury is one of four terrestrial 
             planets in the Solar System, and is a rocky body like Earth.</p>
 
-          <p>Source: <a href="https://en.wikipedia.org/wiki/Mercury_(planet)" target="_blank">Wikipedia</a></p>
+          <p #id="planet_source">Source: <a id="source" href="https://en.wikipedia.org/wiki/Mercury_(planet)" target="_blank">Wikipedia</a></p>
         </div>
           
-        <div id="planet-content-details">
-          <button class="active">
+        <div id="planet_buttons">
+          <button data-content="overview" class="active">
             <h3><span>01</span>Overview</h3>
           </button>
-          <button>
+          <button data-content="internal">
             <h3><span>02</span>Internal Structure</h3>
           </button>
-          <button>
+          <button data-content="geology">
             <h3><span>03</span>Surface Geology</h3>
           </button>
         </div>
       </div>
 
-      <div id="planet-details">
-        <section>  
+      <div id="planet_stats">
+        <div>  
           <h4>Rotation Time</h4>
-          <h2>58.6 Days</h2>
-        </section>
+          <h2 id="rotation">58.6 Days</h2>
+        </div>
 
-        <section>
+        <div>
           <h4>Revolution Time</h4>
-          <h2>87.97 Days</h2>
-        </section>
+          <h2 id="revolution">87.97 Days</h2>
+        </div>
 
-        <section>
+        <div>
           <h4>Radius</h4>
-          <h2>2,439.7 KM</h2>
-        </section>
+          <h2 id="radius">2,439.7 KM</h2>
+        </div>
 
-        <section>
-         <h4>Average Temp.</h4>
-          <h2>430°c</h2>
-        </section>
+        <div>
+          <h4>Average Temp.</h4>
+          <h2 id="temperature">430°c</h2>
+        </div>
       </div>
     </div>
 
   </div>
+
+  <script src="./js/index.js"></script>
+  <script>
+    fetch('data.json')
+    .then(promise => promise.json())
+    .then(console.log);
+  </script>
 
 </body>
 </html>
